@@ -8,6 +8,7 @@ TagManager:
   - Cliente
   - Lento
   - Rapido
+  - Carrito
   layers:
   - Default
   - TransparentFX

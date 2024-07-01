@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+   
     [SerializeField] float steerSpeed = 200f;
     [SerializeField] float moveSpeed = 15f;
     [SerializeField] float velocidadRapido = 45f;
     [SerializeField] float velocidadLento = 1f;
-    // Start is called before the first frame update
+    // Start is called before the first frame update    
+    
     void Start()
     {       
         
@@ -28,7 +31,7 @@ public class NewBehaviourScript : MonoBehaviour
         //Debug.Log("Entrando en trigger!");
         if (other.tag == "Rapido")
         {
-            Debug.Log("Viva la libertad carajo!");   
+            Debug.Log("Viva la libertad carajo!");              
             moveSpeed = velocidadRapido;         
         }
         if (other.tag == "Lento")

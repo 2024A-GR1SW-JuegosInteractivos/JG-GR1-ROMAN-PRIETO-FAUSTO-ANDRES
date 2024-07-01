@@ -29,6 +29,7 @@ public class ColliderEjemplo : MonoBehaviour
              tieneMotosierra = true;
              spriteRenderer.color = tieneMotosierraColor;
              Destroy(other.gameObject, delayDestroy);
+             
         }
         if(other.tag == "Cliente" && tieneMotosierra)
         {
